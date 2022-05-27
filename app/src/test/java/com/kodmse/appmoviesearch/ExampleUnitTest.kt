@@ -1,4 +1,4 @@
-package com.example.appmoviesearch
+package com.kodmse.appmoviesearch
 
 import org.junit.Test
 
