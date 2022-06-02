@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.appmoviesearch.databinding.FragmentMainRecyclerItemBinding
-import com.kodmse.appmoviesearch.model.entities.Movie
+import com.kodmse.appmoviesearch.domain.Movie
 import com.kodmse.appmoviesearch.ui.main.MainFragment
 
 class MainFragmentAdapter(private val itemClickListener: MainFragment.OnItemViewClickListener) :

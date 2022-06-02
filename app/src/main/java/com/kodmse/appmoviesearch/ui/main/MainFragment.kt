@@ -9,9 +9,10 @@ import androidx.lifecycle.Observer
 import com.example.appmoviesearch.R
 import com.example.appmoviesearch.databinding.MainFragmentBinding
 import com.google.android.material.navigation.NavigationBarView
-import com.google.android.material.snackbar.Snackbar
-import com.kodmse.appmoviesearch.model.AppState
-import com.kodmse.appmoviesearch.model.entities.Movie
+import com.kodmse.appmoviesearch.data.AppState
+import com.kodmse.appmoviesearch.domain.Movie
+import com.kodmse.appmoviesearch.showSnackBar
+import com.kodmse.appmoviesearch.showSnackBarNotAction
 import com.kodmse.appmoviesearch.ui.adapters.MainFragmentAdapter
 import com.kodmse.appmoviesearch.ui.details.DetailsFragment
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -44,11 +45,17 @@ class MainFragment : Fragment() {
                 when (item.itemId) {
                     R.id.action_list -> {
                         viewModel.getMovieFromLocalSourceAll()
+                        mainFragment.showSnackBarNotAction(
+                            getString(R.string.all_movies)
+                        )
                         return@OnItemSelectedListener true
                     }
 
                     R.id.action_top -> {
                         viewModel.getMovieFromLocalSourceTop250()
+                        mainFragment.showSnackBarNotAction(
+                            getString(R.string.top_250_movies)
+                        )
                         return@OnItemSelectedListener true
                     }
                 }
@@ -85,10 +92,10 @@ class MainFragment : Fragment() {
             }
             is AppState.Error -> {
                 progressBar.visibility = View.GONE
-                Snackbar
-                    .make(binding.bottomNav, getString(R.string.error), Snackbar.LENGTH_INDEFINITE)
-                    .setAction(getString(R.string.reload)) { viewModel.getMovieFromLocalSourceAll() }
-                    .show()
+                mainFragment.showSnackBar(
+                    R.string.error,
+                    R.string.reload,
+                    { viewModel.getMovieFromLocalSourceAll() })
             }
         }
     }

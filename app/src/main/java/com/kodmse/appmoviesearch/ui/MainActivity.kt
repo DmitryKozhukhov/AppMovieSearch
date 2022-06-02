@@ -1,4 +1,4 @@
-package com.kodmse.appmoviesearch
+package com.kodmse.appmoviesearch.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

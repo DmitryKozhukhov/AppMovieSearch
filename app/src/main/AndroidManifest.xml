@@ -11,7 +11,7 @@
         android:theme="@style/Theme.AppMovieSearch"
         android:name="com.kodmse.appmoviesearch.App$App">
         <activity
-            android:name="com.kodmse.appmoviesearch.MainActivity"
+            android:name="com.kodmse.appmoviesearch.ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

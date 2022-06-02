@@ -11,4 +11,6 @@
     <string name="rating">Рейтинг:</string>
     <string name="description">Описание:</string>
     <string name="descriptionMovie">Москва пятидесятых годов. Три молодые провинциалки приезжают в Москву в поисках того, что ищут люди во всех столицах мира — любви, счастья и достатка. Их судьбы складываются именно так, как предполагает характер каждой из девушек.</string>
+    <string name="all_movies">Все фильмы</string>
+    <string name="top_250_movies">Топ 250 Фильмов</string>
 </resources>

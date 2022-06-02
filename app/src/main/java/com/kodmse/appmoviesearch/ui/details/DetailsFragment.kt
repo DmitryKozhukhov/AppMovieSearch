@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.appmoviesearch.databinding.DetailsFragmentBinding
-import com.kodmse.appmoviesearch.model.entities.Movie
+import com.kodmse.appmoviesearch.domain.Movie
 
 class DetailsFragment : Fragment() {
 
@@ -29,7 +29,6 @@ class DetailsFragment : Fragment() {
     }
 
     private fun setData(movie: Movie) = with(binding) {
-
         movieName.text = movie.name
         movieCountry.text = movie.country
         movieYear.text = movie.year.toString()

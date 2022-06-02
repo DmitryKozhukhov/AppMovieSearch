@@ -1,4 +1,4 @@
-package com.kodmse.appmoviesearch.model.entities
+package com.kodmse.appmoviesearch.domain
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

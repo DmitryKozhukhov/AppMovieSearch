@@ -3,8 +3,8 @@ package com.kodmse.appmoviesearch.ui.main
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.kodmse.appmoviesearch.model.AppState
-import com.kodmse.appmoviesearch.model.repository.Repository
+import com.kodmse.appmoviesearch.data.AppState
+import com.kodmse.appmoviesearch.data.repository.Repository
 
 class MainViewModel(private val repository: Repository) : ViewModel() {
     private val localLiveData = MutableLiveData<AppState>()

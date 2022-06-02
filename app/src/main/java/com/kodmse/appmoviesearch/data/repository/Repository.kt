@@ -1,6 +1,6 @@
-package com.kodmse.appmoviesearch.model.repository
+package com.kodmse.appmoviesearch.data.repository
 
-import com.kodmse.appmoviesearch.model.entities.Movie
+import com.kodmse.appmoviesearch.domain.Movie
 
 interface Repository {
     fun getMovieFromServer(): Movie
