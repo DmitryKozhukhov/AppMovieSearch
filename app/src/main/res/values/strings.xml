@@ -1,6 +1,16 @@
 <resources>
     <string name="app_name">AppMovieSearch</string>
     <string name="movie_year">Год</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error">ошибка</string>
+    <string name="reload">обновить</string>
+    <string name="action_list">Все фильмы</string>
+    <string name="action_favorite">Избранное</string>
+    <string name="action_top">Топ250</string>
+    <string name="county">Страна:</string>
+    <string name="year">Год:</string>
+    <string name="rating">Рейтинг:</string>
+    <string name="description">Описание:</string>
+    <string name="descriptionMovie">Москва пятидесятых годов. Три молодые провинциалки приезжают в Москву в поисках того, что ищут люди во всех столицах мира — любви, счастья и достатка. Их судьбы складываются именно так, как предполагает характер каждой из девушек.</string>
+    <string name="all_movies">Все фильмы</string>
+    <string name="top_250_movies">Топ 250 Фильмов</string>
 </resources>

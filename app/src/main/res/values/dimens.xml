@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="movie_name_margin_top">50dp</dimen>
-    <dimen name="margin_15_dp">15dp</dimen>
-    <dimen name="margin_5_dp">5dp</dimen>
-    <dimen name="movie_rating_text_size">40sp</dimen>
+    <dimen name="margin_16_dp">16dp</dimen>
+    <dimen name="margin_8_dp">8dp</dimen>
+    <dimen name="movie_rating_text_size">16sp</dimen>
     <dimen name="movie_name_text_size">25sp</dimen>
+    <dimen name="margin_32_dp">32dp</dimen>
+    <dimen name="widthImage">200dp</dimen>
+    <dimen name="heightImage">300dp</dimen>
+    <dimen name="widthCard">160dp</dimen>
+    <dimen name="heightCard">246dp</dimen>
 </resources>

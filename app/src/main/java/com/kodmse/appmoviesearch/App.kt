@@ -1,4 +1,4 @@
-package com.example.appmoviesearch
+package com.kodmse.appmoviesearch
 
 import android.app.Application
 import org.koin.android.ext.koin.androidContext
